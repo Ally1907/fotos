@@ -1,0 +1,283 @@
+
+body {
+
+        font-family: 'Franklin Gothic Medium', sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #0e4261;
+        background: linear-gradient(to right, #e1f7f7, #c5e5e5); 
+    
+    font-family: 'Franklin Gothic Medium', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #0e4261;
+}
+
+header {
+    background: linear-gradient(to right, #6fd0d3, #045f5b); 
+    color: rgb(255, 255, 255);
+    padding: 50px 0;
+    text-align: center;
+    position: relative;
+}
+
+header img {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 30px;
+    left: 40px;
+}
+
+header h1 {
+    font-size: 4em;
+    margin: 0;
+}
+
+nav {
+    margin-top: 50px;
+}
+
+nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 2em;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+.seccion {
+    padding: 80px 60px;
+    text-align: center;
+    padding: 80px 60px;
+    text-align: center;
+    background-color: #ffffff; 
+    border-radius: 12px; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+    margin: 20px;
+
+}
+
+#galeria {
+    width: 88%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 13px; 
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 7px 15px rgba(0, 0, 0, 0.3); 
+    background-color: #cef3ee;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px; 
+    padding: 25px;
+}
+
+.galeria img {
+    width: 100%;            
+    height: 150px;        
+    object-fit: cover;      
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+}
+
+
+.filtros {
+    margin: 40px 0;
+}
+
+.filtros button {
+    background-color: #0f969b;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 6px;
+    padding: 20px 30px;
+    margin: 0 20px;
+    cursor: pointer;
+    font-size: 1.6em;
+    transition: background-color 0.3s ease;
+
+    background: linear-gradient(135deg, #0f969b, #027b91); 
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    padding: 20px 30px;
+    margin: 0 20px;
+    cursor: pointer;
+    font-size: 1.6em;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.filtros button:hover {
+    background: linear-gradient(135deg, #027b91, #0f969b); 
+    transform: scale(1.1); 
+}
+
+.filtros button:hover {
+    background-color: #027b91;
+}
+
+
+.seccion-filtro {
+    display: none;
+}
+
+#paisaje {
+    display: block; 
+}
+
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+    text-align: left;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #255c7c;
+    border-radius: 4px;
+}
+
+form button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #0f969b;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #027b91;
+}
+
+
+footer {
+
+    background-color: #333;
+    color: rgb(151, 189, 190);
+    text-align: center;
+    padding: 40px 0;
+    font-size: 1.1em;
+    border-top: 2px solid #6fd0d3; 
+    background-color: #333;
+    color: rgb(151, 189, 190);
+    text-align: center;
+    padding: 30px 0;
+}
+
+
+@media (max-width: 768px) {
+    .galeria {
+        grid-template-columns: 1fr 1fr; 
+        gap: 15px; 
+    }
+    .galeria img {
+        max-height: 250px; 
+    }
+}
+
+
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #abd0d6;
+    font-size: 1em;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #64cdfd;
+}
+
+button {
+    background-color: #60daff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #15739e;
+}
+
+
+.lightbox {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#lightbox-img {
+    max-width: 80%;
+    max-height: 80%;
+    margin-bottom: 20px;
+}
+
+#close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: rgb(28, 117, 153);
+    font-size: 36px;
+    cursor: pointer;
+}
+
+.back-to-gallery {
+    padding: 10px 20px;
+    background-color: #27646e;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.back-to-gallery:hover {
+    background-color: #45a098;
+}
